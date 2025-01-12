@@ -1,5 +1,5 @@
 resources:
-  - service.yaml
-  - istio-gateway.yaml
-  - istio-virtualservice.yaml
-  - istio-ingressgateway.yaml
+  - apps/service.yaml
+  - apps/istio-gateway.yaml
+  - apps/istio-virtualservice.yaml
+  - apps/istio-ingressgateway.yaml
