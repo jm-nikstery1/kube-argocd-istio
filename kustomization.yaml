@@ -1,5 +1,8 @@
 resources:
   - apps/service.yaml
+  - apps/nginx-deployment.yaml
+  - apps/backend-deployment.yaml
+  - apps/frontend-deployment.yaml
   - apps/istio-gateway.yaml
   - apps/istio-virtualservice.yaml
   - apps/istio-ingressgateway.yaml
