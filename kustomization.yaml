@@ -6,3 +6,5 @@ resources:
   - apps/istio-gateway.yaml
   - apps/istio-virtualservice.yaml
   - apps/istio-ingressgateway.yaml
+  - apps/kiali.yaml
+  - apps/prometheus.yaml
