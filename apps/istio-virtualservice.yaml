@@ -1,0 +1,35 @@
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: frontend-backend-virtualservice
+  namespace: default
+spec:
+  hosts:
+    - "*"
+  gateways:
+    - frontend-backend-gateway
+  http:
+    - match:
+        - uri:
+            prefix: /frontend
+      route:
+        - destination:
+            host: frontend.default.svc.cluster.local
+            port:
+              number: 5173
+    - match:
+        - uri:
+            prefix: /backend
+      route:
+        - destination:
+            host: backend.default.svc.cluster.local
+            port:
+              number: 8000
+    - match:
+        - uri:
+            prefix: /nginx
+      route:
+        - destination:
+            host: nginx.default.svc.cluster.local
+            port:
+              number: 80
