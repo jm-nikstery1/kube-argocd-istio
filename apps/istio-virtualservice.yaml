@@ -2,7 +2,7 @@ apiVersion: networking.istio.io/v1beta1
 kind: VirtualService
 metadata:
   name: frontend-backend-virtualservice
-  namespace: default
+  namespace: istio-system 
 spec:
   hosts:
     - "*"
