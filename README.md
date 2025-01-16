@@ -1,2 +1,2 @@
-# kube-argocd-update-1
-kube-argocd-update-1
+# kube-argocd-istio 
+kube-argocd-istio 
